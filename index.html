@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Pornoski</title>
+<meta name="generator" content="WYSIWYG Web Builder 20 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body
+{
+   background-color: #000000;
+   color: #FFFFFF;
+   font-family: "Open Sans";
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   padding: 0;
+}
+a
+{
+   color: #FFFFFF;
+   text-decoration: underline;
+}
+a:active
+{
+   color: #0000FF;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+@keyframes slide-up-in
+{
+   0% { transform: translate(0px,100%) rotate(1deg) ; opacity: 0; transform-origin: 0 0;  }
+   100% { opacity: 1; transform: translate(0px,0px) rotate(0deg) ; transform-origin: 0 0;  }
+}
+#wb_headerLayoutGrid
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #000000;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   border-radius: 0px;
+   box-sizing: border-box;
+   margin: 0;
+}
+#headerLayoutGrid
+{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#headerLayoutGrid > .col-1, #headerLayoutGrid > .col-2
+{
+   box-sizing: border-box;
+   font-size: 0;
+   min-height: 1px;
+   padding-right: 0px;
+   padding-left: 0px;
+   position: relative;
+}
+#headerLayoutGrid > .col-1, #headerLayoutGrid > .col-2
+{
+   flex: 0 0 auto;
+}
+#headerLayoutGrid > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 50%;
+   max-width: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: flex-start;
+   align-self: stretch;
+   align-items: flex-start;
+   justify-content: flex-start;
+   text-align: left;
+}
+#headerLayoutGrid > .col-2
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   flex-basis: 50%;
+   max-width: 50%;
+   display: flex;
+   flex-wrap: wrap;
+   align-content: center;
+   align-self: stretch;
+   align-items: center;
+   justify-content: flex-end;
+   text-align: right;
+}
+@media (max-width: 480px)
+{
+#headerLayoutGrid > .col-1, #headerLayoutGrid > .col-2
+{
+   flex-basis: 100% !important;
+   max-width: 100% !important;
+}
+}
+#wb_headerMenu a, #headerMenu_markup li a
+{
+   display: block;
+   text-align: left;
+   vertical-align: middle;
+}
+#headerMenu_markup
+{
+   display: none;
+   margin: 0;
+   padding: 0;
+}
+#headerMenu_panel #headerMenu_markup
+{
+   display: block;
+}
+#headerMenu_markup ul
+{
+   list-style: none;
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+}
+#headerMenu_markup li a, #headerMenu_markup li a:hover
+{
+   padding: 10px 10px 10px 10px;
+   box-shadow: none;
+}
+#headerMenu_markup .divider
+{
+   height: 1px;
+   margin: 9px 0;
+   overflow: hidden;
+   background-color: #292D33;
+}
+#headerMenu_panel
+{
+   display: none;
+   position: fixed;
+   top: 0;
+   height: 100%;
+   width: 250px;
+   z-index: 9999;
+}
+#headerMenu_markup li a
+{
+   color: #FFFFFF;
+   border: 0px solid #292D33;
+   background-color: #000000;
+   font-family: "Open Sans";
+   font-weight: normal;
+   font-size: 16px;
+   font-style: normal;
+   text-decoration: none;
+   text-transform: none;
+}
+#wb_headerMenu a
+{
+   color: #000000;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   background-color: #FFFFFF;
+   font-family: "Open Sans";
+   font-weight: normal;
+   font-size: 16px;
+   font-style: normal;
+   text-decoration: none;
+   text-align: center;
+   text-transform: none;
+}
+#wb_headerMenu a
+{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+#headerMenu_markup li a:hover
+{
+   color: #FFFFFF;
+   background-color: #FFFFFF;
+   border: 0px solid #292D33;
+}
+#headerMenu_markup li a .icon
+{
+   fill: currentColor;
+   margin-right: 4px;
+   height: 24px;
+   width: 24px;
+   vertical-align: middle;
+}
+#headerMenu_markup li a:hover .icon
+{
+   fill: currentColor;
+}
+#wb_headerMenu a:hover
+{
+   color: #000000;
+   background-color: #FFFFFF;
+   border: 0px solid #FFFFFF;
+}
+#headerMenu_panel
+{
+   background-color: #000000;
+   overflow-y: auto;
+}
+#headerMenu.open .line:nth-child(1)
+{
+}
+#headerMenu.open .line:nth-child(2)
+{
+}
+#headerMenu.open .line:nth-child(3)
+{
+}
+#headerMenu svg
+{
+   overflow: visible;
+   transition: transform 400ms linear;
+}
+#headerMenu.open svg
+{
+   transform: rotate(45deg);
+}
+#headerMenu .line
+{
+   fill: none;
+   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+   stroke: #000000;
+   stroke-width: 7.68;
+   stroke-linecap: round;
+}
+#headerMenu .line.top
+{
+   stroke-dasharray: 40 121;
+}
+#headerMenu .line.bottom
+{
+   stroke-dasharray: 40 121;
+}
+#headerMenu.open .line.top
+{
+   stroke-dashoffset: -68px;
+}
+#headerMenu.open .line.bottom
+{
+   stroke-dashoffset: -68px;
+}
+#headerMenu
+{
+   line-height: 48px;
+   width: 48px;
+   height: 48px;
+   position: absolute;
+   z-index: 999;
+}
+#wb_headerTitle
+{
+   background-color: transparent;
+   background-image: none;
+   border-radius: 0px;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 10px 0 10px 0;
+   text-align: center;
+}
+#headerTitle
+{
+   color: #000000;
+   font-family: "Open Sans ExtraBold";
+   font-weight: bold;
+   font-style: normal;
+   font-size: 43px;
+   margin: 0;
+   text-align: center;
+   text-transform: none;
+   -webkit-text-stroke: 1px #FFFFFF;
+   text-stroke: 1px #FFFFFF;
+}
+.ToolTip1
+{
+   position: absolute;
+   z-index: 1070;
+   display: block;
+   margin: 0;
+   line-height: 1.5;
+   text-align: left;
+   text-decoration: none;
+   opacity: 0;
+}
+.ToolTip1.show
+{
+   opacity: 0.9;
+}
+.ToolTip1 .tooltip-arrow
+{
+   position: absolute;
+   display: block;
+   width: 20px;
+   height: 10px;
+}
+.ToolTip1 .tooltip-arrow::before
+{
+   position: absolute;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.ToolTip1 .tooltip-arrow:after
+{
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 0;
+   border-color: transparent;
+   border-style: solid;
+   z-index: -1;
+}
+.ToolTip1.bs-tooltip-bottom, .ToolTip1.bs-tooltip-auto[x-placement^="bottom"]
+{
+   padding: 11px 0;
+}
+.ToolTip1.bs-tooltip-bottom .tooltip-arrow, .ToolTip1.bs-tooltip-auto[x-placement^="bottom"] .tooltip-arrow
+{
+   top: 2px;
+}
+.ToolTip1.bs-tooltip-bottom .tooltip-arrow::before, .ToolTip1.bs-tooltip-auto[x-placement^="bottom"] .tooltip-arrow::before
+{
+   bottom: 0;
+   border-width: 0 10px 10px;
+   border-bottom-color: rgba(255,255,255,1.00);
+}
+.ToolTip1.bs-tooltip-bottom .tooltip-arrow::after, .ToolTip1.bs-tooltip-auto[x-placement^="bottom"] .tooltip-arrow::after
+{
+   top: -1px;
+   left: 50%;
+   margin-left: -11px;
+   border-width: 0 11px 11px;
+   border-bottom-color: #000000;
+}
+.ToolTip1 .tooltip-inner 
+{
+   max-width: 150px;
+   color: #000000;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 1px solid #000000;
+   border-radius: 4px;
+   font-family: "Open Sans";
+   font-weight: bold;
+   font-size: 11px;
+   font-style: normal;
+   text-align: center;
+   padding: 10px 10px 10px 10px;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+.ToolTip1.animate-show
+{
+   animation-duration: 1000ms;
+   animation-fill-mode: both;
+   animation-name: slide-up-in;
+}
+#PhotoCollage1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   width: 100%;
+   height: 100%;
+   table-layout: fixed;
+   display: table;
+   margin: 0;
+   position: relative;
+}
+#PhotoCollage1 .thumbnail img
+{
+   border: 0px solid #DDDDDD;
+   box-sizing: border-box;
+   border-radius: 0px;
+}
+#PhotoCollage1 .thumbnail
+{
+   position: absolute;
+   margin: 0;
+}
+#PhotoCollage1 .thumbnail img
+{
+   width: 100%;
+   height: 100%;
+   margin: 0;
+   padding: 0;
+   object-fit: cover;
+}
+#PhotoGallery1
+{
+   box-sizing: border-box;
+   font-size: 0;
+   width: 100%;
+   height: 100%;
+   table-layout: fixed;
+   display: table;
+   margin: 0;
+}
+#PhotoGallery1 .thumbnails
+{
+   margin: 0;
+}
+#PhotoGallery1 .thumbnail
+{
+   position: relative;
+   min-height: 1px;
+   box-sizing: border-box;
+   float: left;
+   margin: 0;
+   padding: 3px 3px 3px 3px;
+   width: 33.33333333%;
+   text-align: center;
+   vertical-align: top;
+}
+#PhotoGallery1 .thumbnail img
+{
+   border: 0px solid #DDDDDD;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+   box-sizing: border-box;
+   border-radius: 0px;
+}
+#PhotoGallery1 .clearfix:before,
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:before,
+#PhotoGallery1 .thumbnails:after
+{
+   display: table;
+   content: " ";
+}
+#PhotoGallery1 .clearfix:after,
+#PhotoGallery1 .thumbnails:after
+{
+   clear: both;
+}
+#PhotoGallery1 .visible-col3
+{
+   display: block;
+}
+</style>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/wb.panel.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/wb.photocollage.min.js"></script>
+<link rel="stylesheet" href="magnificpopup/magnific-popup.css">
+<script src="magnificpopup/jquery.magnific-popup.min.js"></script>
+<script src="js/wwb20.min.js"></script>
+<script src="js/index.js"></script>
+</head>
+<body>
+<div id="wb_headerLayoutGrid">
+<div id="headerLayoutGrid">
+<div class="col-1">
+<div id="wb_headerTitle" style="display:block;width:100%;z-index:0;">
+<h2 id="headerTitle">PORNOSKI</h2>
+</div>
+</div>
+<div class="col-2">
+</div>
+</div>
+</div>
+<nav id="wb_headerMenu" style="position:absolute;left:1228px;top:25px;width:48px;height:48px;text-align:center;z-index:2;">
+<a href="#headerMenu_markup" id="headerMenu" onclick="bootstrap.Tooltip.getInstance('#wb_headerMenu').hide();return true;return false;"><svg viewBox="20 10 60 80" width="38">
+<path class="line top" d="m 70,33 h -40 c 0,0 -8.5,-0.149796 -8.5,8.5 0,8.649796 8.5,8.5 8.5,8.5 h 20 v -20" />
+<path class="line middle" d="m 70,50 h -40" />
+<path class="line bottom" d="m 30,67 h 40 c 0,0 8.5,0.149796 8.5,-8.5 0,-8.649796 -8.5,-8.5 -8.5,-8.5 h -20 v 20" />
+</svg>
+</a>
+<div id="headerMenu_markup">
+<ul role="menu">
+<li role="menuitem"><a href="./index.html" class="nav-link"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M1089 513 C1086 530, 1080 545, 1068 557 L1068 557 L1068 557 C1056 569, 1041 577, 1024 577 L961 577 L961 577 L962 897 L962 897 C961 902, 961 908, 961 913 L961 945 L961 945 C961 968, 952 986, 936 1001 C921 1017, 902 1025, 880 1025 L848 1025 L848 1025 C845 1025, 843 1025, 842 1025 C839 1025, 836 1025, 834 1025 L768 1025 L720 1025 C697 1025, 678 1017, 664 1001 C648 986, 640 968, 640 945 L640 897 L640 897 L640 769 L640 769 C640 750, 634 735, 622 723 C610 711, 594 705, 577 705 L449 705 L449 705 C429 705, 414 711, 402 723 C390 735, 384 750, 384 769 L384 897 L384 897 L384 945 L384 945 C384 968, 376 986, 360 1001 C345 1017, 326 1025, 304 1025 L256 1025 L193 1025 C190 1025, 189 1025, 188 1025 C186 1025, 185 1025, 184 1025 C181 1025, 178 1025, 176 1025 L144 1025 L144 1025 C121 1025, 102 1017, 88 1001 C72 986, 65 968, 65 945 L65 721 L65 721 C65 720, 65 718, 65 715 L65 577 L65 577 L0 577 L0 577 C-19 577, -35 569, -46 557 C-58 545, -63 530, -63 513 C-63 494, -58 478, -44 465 L468 17 L468 17 C482 5, 497 0, 512 1 C528 1, 542 6, 554 15 L1066 465 L1066 465 C1082 478, 1089 494, 1089 513"/>
+</svg>
+<span>Zdj&#281;cia</span></a></li>
+<li role="menuitem"><a href="./index2.html" class="nav-link"><svg class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+   <path d="M885 160 C905 168, 916 179, 918 193 L918 822 L918 822 L928 815 L928 815 L654 460 L654 460 C643 445, 627 438, 607 438 C587 438, 572 445, 561 460 L404 672 L404 672 L354 592 L354 592 C340 575, 323 566, 303 566 C283 566, 269 573, 261 586 L96 815 L96 815 L106 822 L106 822 L106 822 L106 822 L106 190 L106 190 C106 178, 114 171, 127 170 L907 170Z  M117 65 C84 59, 55 69, 29 95 L29 95 L29 95 C4 121, -10 153, -11 193 L-11 833 L-11 833 C-10 871, 4 903, 29 929 C55 955, 87 969, 126 970 L895 970 L895 970 C935 969, 967 955, 993 929 C1019 903, 1033 869, 1035 828 L1035 197 L1035 197 C1033 155, 1019 121, 993 95 C967 69, 933 56, 890 54 L139 54Z  M299 449 C331 453, 359 438, 382 404 C398 369, 398 335, 382 301 C359 266, 327 248, 286 246 C247 248, 216 265, 193 300 C177 335, 177 370, 193 404 C216 439, 249 455, 292 453"/>
+</svg>
+<span>Filmy</span></a></li>
+</ul>
+</div>
+</nav>
+
+<div id="wb_PhotoCollage1" style="position:absolute;left:56px;top:94px;width:1155px;height:1155px;z-index:5;">
+<div id="PhotoCollage1">
+<div class="thumbnails">
+<figure class="thumbnail">
+<a href="images/1697326031201725.png" data-rel=""><img alt="" src="images/1697326031201725.png" class="image" width="377" height="448"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/fre23enude_1.png" data-rel=""><img alt="" src="images/fre23enude_1.png" class="image" width="377" height="503"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/freenude_10.jpg" data-rel=""><img alt="" src="images/freenude_10.jpg" class="image" width="377" height="503"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/freenude_30.jpg" data-rel=""><img alt="" src="images/freenude_30.jpg" class="image" width="377" height="503"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/freenude_26.jpg" data-rel=""><img alt="" src="images/freenude_26.jpg" class="image" width="377" height="566"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/LyvaeFMWzSE6Fe.jpg" data-rel=""><img alt="" src="images/LyvaeFMWzSE6Fe.jpg" class="image" width="377" height="503"></a>
+</figure>
+</div>
+</div></div>
+<div id="wb_PhotoGallery1" style="position:absolute;left:56px;top:1254px;width:1155px;height:1028px;z-index:6;">
+<div id="PhotoGallery1">
+<div class="thumbnails">
+<figure class="thumbnail">
+<a href="images/t8b5d1peubkJJH.jpg" data-rel=""><img alt="" src="images/t8b5d1peubkJJH.jpg" class="image" width="379" height="505"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/image_2023_04_06T05_54_23_495Z.png" data-rel=""><img alt="" src="images/image_2023_04_06T05_54_23_495Z.png" class="image" width="379" height="498"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/image.png" data-rel=""><img alt="" src="images/image.png" class="image" width="379" height="511"></a>
+</figure>
+<div class="clearfix visible-col3"></div>
+<figure class="thumbnail">
+<a href="images/reddit3.jpg" data-rel=""><img alt="" src="images/reddit3.jpg" class="image" width="379" height="484"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/RDT_20240428_0024397322280915494776328.jpg" data-rel=""><img alt="" src="images/RDT_20240428_0024397322280915494776328.jpg" class="image" width="379" height="505"></a>
+</figure>
+<figure class="thumbnail">
+<a href="images/Screenshot_20240502-164418.png" data-rel=""><img alt="" src="images/Screenshot_20240502-164418.png" class="image" width="379" height="497"></a>
+</figure>
+<div class="clearfix visible-col3"></div>
+</div>
+</div></div>
+</body>
+</html>
